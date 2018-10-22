@@ -1,0 +1,48 @@
+body{
+	background: #3A3A3E;
+}
+
+nav{
+	position: fixed;
+	top: 0px;
+	left: 5px;
+	width: 100%;
+	/*margin-top: 10px;
+	margin-left: 10px;*/
+	overflow: hidden;
+	height: 75px;
+	padding: auto;
+}
+
+nav .navbar {
+    display: block;
+    float: left;
+    height: 100%;
+}
+
+nav #navbar{
+	/*height: 100%;*/
+}
+
+ul{
+	position: relative;
+	left: 50%;
+	height: 100%;
+	text-align: center;
+	padding-top: 0.8em;
+}
+
+li{
+	display: block;
+	float: left;
+	text-align: center;
+	width: 5em;
+	/*height: 100%;*/
+	padding: auto auto;
+}
+
+.section{
+	position: relative;
+	top: 50px;
+	text-align: center;
+}
