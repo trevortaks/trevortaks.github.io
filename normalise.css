@@ -162,3 +162,7 @@ body, input, button {
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 }
+
+ul{
+	list-style: none;
+}
