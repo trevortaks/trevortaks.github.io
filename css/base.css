@@ -1,19 +1,12 @@
 @font-face{
-	font-family: 'BebasNeue-Regular';
-	src: url("fonts/BebasNeue-webfont.eot");
-	src: url("fonts/BebasNeue-webfont.svg") format("svg"),
-		 url("fonts/BebasNeue-webfont.ttf") format("truetype"),
-		 url("fonts/BebasNeue-webfont.woff") format("woff");
-	font-weight: normal;
+	font-family: 'KrinkesRegular';
+	src: url('../fonts/KrinkesRegularPERSONAL.ttf') format('truetype');
 	font-style: normal;
-	
+	font-weight: normal;
 }
 
-@font-face{
-	font-family: 'KrinkesRegular';
-	src: url('fonts/KrinkesRegularPERSONAL.ttf') format('truetype');
-	font-style: normal;
-	font-weight: normal;
+html{
+	scroll-behavior: smooth;
 }
 
 html, body{
@@ -23,21 +16,25 @@ html, body{
 	overflow: visible;
 }
 
+.btn, .btn:hover{
+	background-color: transparent;
+	border-color: white;
+}
+
 nav{
-	position: absolute;
+	position: relative;
 	top: 0px;
 	left: 0px;
 	width: 100%;
 	height: 75px;
-	background: #3f3f3f;
+	/*background: #3f3f3f;*/
 	opacity: 0.8;
-	z-index: 10000;
+	z-index: 1;
 	text-align: center;
 	font-family: KrinkesRegular;
 	font-size: 1.5em;
+	color: white;
 }
-
-nav
 
 nav .navbar {
     display: block;
@@ -48,29 +45,20 @@ nav #navbar{
 	/*height: 100%;*/
 }
 
-
-
-/*ul{
-	position: relative;
-	left: 40%;
-	height: 100%;
-	text-align: center;
-	padding-top: 0.8em;
+i {
+	width: 50px;
+	height: 50px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	display: inline-block;
+	padding: 3px;
+	margin-top: 20%;
+	animation: arrowAnimation 5s linear infinite;
 }
 
-li{
-	display: block;
-	float: left;
-	text-align: center;
-	width: 5em;
-	/*height: 100%;
-	padding: auto auto;
-}*/
-
-/*a{
-	color: white;
-	text-decoration: none;
-}*/
+.down{
+	transform: rotate(45deg);
+}
 
 .body-content{
 	background-color: rgba(0, 0, 0, 0.4);
@@ -85,6 +73,11 @@ li{
 	z-index: 10000;
 }
 
+div h3{
+	position: relative;
+	top: 10%;
+}
+
 .section{
 	text-align: center;
 }
@@ -97,14 +90,25 @@ li{
 
 #name-text{
 	position: relative;
-	top: 30%;
+	top: 20%;
 	font-size: 2.5em;
+}
+
+#name-text h1{
+	font-family: KrinkesRegular;
+	margin-bottom: -0.5em;
+	font-size: 3em;	
+}
+#name-text h4{
+	margin-bottom: 2.5em;
 }
 
 #about-text, #education-text, #portfolio-text, #contact-text{
 	position: relative;
 	top: 10%;
 	font-size: 1.5em;
+	max-height: 25%;
+	max-width: 75%;
 }
 
 /*div img{
@@ -115,6 +119,11 @@ li{
 	left: 0;
 	z-index: -1
 }*/
+
+img{
+	width: 50%;
+	height: 50%;
+}
 
 #education{
 	text-align: center;
@@ -130,4 +139,10 @@ div .edu_item{
 	padding: 5px;
 }
 
-
+@keyframes arrowAnimation{
+	0% { margin-top: 20%;
+		animation-timing-function: ease-in-out; }
+	50%{margin-top: 18%;
+		animation-timing-function: ease-in-out;}
+	100%{margin-top: 20%}
+}
