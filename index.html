@@ -4,30 +4,37 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/normalise.css">
-	<link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" href="css/style1.css">
-
-	<script type="text/javascript" src="js/jquery.js"></script>
-	<script src="bootstrap/js/bootstrap.min.js"></script>
-	<!-- <script type="text/javascript">$('.carousel').carousel()</script> -->
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+	
 	
 	<title>Trevor Takawira | Home</title>
 </head>
 <body>
 
-	<nav>
-		<div class="navbar col-sm-12 col-md-12"><h1>My Curriculum Vitae</h1></div>
-		<!-- <div class="navbar" id="navbar"> 
-			<ul class="navbar" id="navbar">
-				<li><a href="#name">Home</a></li>
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="navbar-header">
+			
+			<h1 class="navbar-brand">My Curriculum Vitae</h1>
+			<button type="button" class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbar-to-collapse">
+				<span class="sr-only">Toggle Navigation</span>
+				<span class="navbar-toggler-icon"></span>
+				<span class="navbar-toggler-icon"></span>
+				<span class="navbar-toggler-icon"></span>
+			</button>
+		</div>
+		<div class="collapse navbar-collapse" id="navbar-to-collapse"> 
+			<ul class="nav navbar-nav" id="navbar">
+				<li><a href="#name" class="current active">Home</a></li>
 				<li><a href="#about">About Me</a></li>
 				<li><a href="#education">Education</a></li>
 				<li><a href="#portfolio">Portfolio</a></li>
 				<li><a href="#contact">Contact Me</a></li>
 			</ul>
-		 </div> -->
+		 </div>
 	</nav>
 
 	<ul class="cb-slideshow">
@@ -46,25 +53,78 @@
 			<div><a href="#about"><i class="arrow down"></a></i></div>
 		</div>
 		<div class="section container" id="about">
-			<h3>About Me</h3>
-			<div id="about-text" class="row">
-				<div class="col-md-6 col-md-offset-3">Quaerat molestiae unde, consectetur numquam laudantium soluta autem culpa! Enim omnis voluptates corporis voluptatem ducimus voluptatum exercitationem tenetur sapiente vel debitis, repudiandae, ipsum consequatur. Eos odit nemo doloribus voluptatibus maxime?</div>
-				<div class="col-md-6 col-md-offset-3">Perferendis dicta iure laboriosam exercitationem quos sed, aspernatur, ea velit atque. Quis eveniet, est cumque maxime excepturi possimus temporibus veritatis, accusamus recusandae? Tempore quos illum nobis accusantium excepturi, minima eligendi.</div>
+<!-- 			<div><a href="#about"><i class="arrow up"></a></i></div> -->
+			<div class="page-header"><h3>About Me</h3></div>
+			<div id="about-text">
+				<div class="col-md-12 col-md-offset-3" style="text-align: left; margin-top: 4em;">
+					<div class="row dets">
+						<div class="col-md-5 panel panel-default  about-item">
+							<div class="panel-heading">
+								<h3 class="panel-title">Name :</h3>
+								<hr>
+								<div class="panel-content">Trevor Takawira</div>
+							</div>
+						</div>
+						<div class="col-md-5 panel panel-default about-item">
+							<div class="panel-heading">
+								<h3 class="panel-title">D.O.B :</h3>
+								<hr>
+								<div class="panel-content"> 04 October 1994</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-5 panel panel-default about-item">
+							<div class="panel-heading">
+								<h3 class="panel-title">Phone :</h3>
+								<hr>
+								<div class="panel-content">+263715717825</div>
+							</div>
+						</div>
+						<div class="col-md-5 panel panel-default about-item">
+							<div class="panel-heading">
+								<h3 class="panel-title">Email :</h3>
+								<hr>
+								<div class="panel-content">trevortaks@gmail.com</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-5 panel panel-default about-item">
+							<div class="panel-heading">
+								<h3 class="panel-title">Address :</h3>
+								<hr>
+								<div class="panel-content">Chikwingwizha <br> Private Bag 9050 <br> Gweru</div>
+							</div>	
+						</div>
+						<div class="col-md-5 panel panel-default about-item">
+							<div class="panel-heading">
+								<h3 class="panel-title">Availability :</h3>
+								<hr>
+								<div class="panel-content"> Immediate</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
+			<div><a href="#education"><i class="arrow down" style="position: relative; top: -6em;"></a></i></div>
 		</div>
 		<div class="section container" id="education">
-			<h3>Education</h3>
+			<!-- <div><a href="#about"><i class="arrow up"></a></i></div> -->
+			<div class="page-header"><h3>Education</h3></div>
 			<div class="row" id="education-text">
 				<div class="col-md-4" id="eduone">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi eius magnam quos minima, tenetur praesentium qui sit voluptates sunt inventore at mollitia maiores dolore, exercitationem, nisi eum eaque alias veritatis!</div>
 				<div class="col-md-4" id="edutwo">Ipsum facere, debitis officia sed inventore esse iste eveniet at dicta doloremque, deleniti est, alias fugit. Possimus earum maxime labore, consequuntur modi, nemo eligendi omnis voluptatum nesciunt ex nihil voluptate.</div>
 				<div class="col-md-4" id="eduthree">Fuga porro consequatur accusantium molestiae sit sint mollitia, cupiditate ullam libero. Molestias omnis laboriosam, voluptatem nihil? Sed, animi! Culpa molestias dolore deleniti, nobis incidunt nulla repellat minima laudantium veniam consequatur.</div>
 			</div>
+			<div><a href="#portfolio"><i class="arrow down"></a></i></div>
 		</div>
 		<div class="section container" id="portfolio">
-			<h3>Gallery</h3>
-			<div class="row" id="portfolio-text">
-				<div class="col-md-12 col-md-offset-6 col-lg-offset-6">
-					<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			<!-- <div><a href="#about"><i class="arrow up"></a></i></div> -->
+			<div class="page-header"><h3>Gallery</h3></div>
+			<div class="row" id="portfolio-text"> 
+				<!-- <div class="col-md-12 col-md-offset-6 col-lg-offset-6"> -->
+					<!-- <div id="myCarousel" class="carousel slide" data-ride="carousel">
 						<ol class="carousel-indicators">
 							<li data-target="#myCarousel" data-slide-to="0"></li>
 							<li data-target="#myCarousel" data-slide-to="1"></li>
@@ -94,38 +154,40 @@
 							<span class="sr-only">Next</span>
 						</a>
 						
+					</div> -->
+					<div class="row">
+						<div class="col-sm-6 col-md-3"><a href="" class="thumbnail"><img src="images/1.jpg" alt=""></a></div>
+						<div class="col-sm-6 col-md-3"><a href="" class="thumbnail"><img src="images/2.jpg" alt=""></a></div>
+						<div class="col-sm-6 col-md-3"><a href="" class="thumbnail"><img src="images/1.jpg" alt=""></a></div>
+						<div class="col-sm-6 col-md-3"><a href="" class="thumbnail"><img src="images/4.jpg" alt=""></a></div>
 					</div>
-				</div>
+				<!-- </div> -->
 			</div>
-		
+			<div><a href="#contact"><i class="arrow down"></a></i></div>
 		</div>
 		<div class="section" id="contact">
+			<!-- <div><a href="#about"><i class="arrow up"></a></i></div> -->
 			<div id="contact-text">
-				<h3>Contact Me</h3>
+				<div class="page-header"><h3>Contact Me</h3></div>
 				<ul>
-					<li>Facebook:</li>
-					<li>Twitter</li>
-					<li>Github</li>
+					<li><span class="fa fa-facebook"></span></li>
+					<li><span class="fa fa-twitter"></span></li>
+					<li><span class="fa fa-github"></span></li>
 				</ul>
 			</div>
+			<div><a href="#name"><i class="arrow down"></a></i></div>
 		</div>
 	</div>
 </body>
 
-	<script>
-		var $root = $('html, body');
-		$('a').click(function(){
-			var href = $.attr(this, 'href');
-			$root.animate({
-				scrollTop: $(href).offset().top;
-			}, 500, function(){
-				window.location.hash = href;
-			});
-			return false;
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		$('#navbar li a').on('click',function(){
+			$('#navbar li a.current').removeClass('current');
+			$(this).addClass('current');
 		});
-
 	</script>
-	
 
 </html>
  

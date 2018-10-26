@@ -9,11 +9,11 @@ html{
 	scroll-behavior: smooth;
 }
 
-html, body{
-	height: 100%;
-	width: 100%;
+body{
+/*	height: 100%;
+	width: 100%;*/
 	color: white;
-	overflow: visible;
+	overflow-x: hidden;
 }
 
 .btn, .btn:hover{
@@ -22,42 +22,68 @@ html, body{
 }
 
 nav{
-	position: relative;
+	position: fixed;
 	top: 0px;
 	left: 0px;
-	width: 100%;
-	height: 75px;
-	/*background: #3f3f3f;*/
-	opacity: 0.8;
-	z-index: 1;
-	text-align: center;
-	font-family: KrinkesRegular;
-	font-size: 1.5em;
+/*	width: 1vw;*/
 	color: white;
+	z-index: 1;
 }
 
-nav .navbar {
-    display: block;
-    float: left;
+.navbar-brand{
+	font-size: 2em;
+	font-family: KrinkesRegular;
+}
+li a, li a:hover{
+	color:white;
+	font-family: Helvetica;
+	text-decoration: none;
 }
 
+li a:hover{
+	color: lightblue;
+	border-bottom: 1px solid lightblue;
+	padding-bottom: 3px;
+}
+
+/*li a:active{
+	text-decoration: underline;
+	color: black;
+}*/
+
+a.current{
+	color: lightblue;
+	border-bottom: 1px solid lightblue;
+	padding-bottom: 3px;
+}
+li{
+	margin-right: 1em;
+}
 nav #navbar{
 	/*height: 100%;*/
 }
 
 i {
-	width: 50px;
-	height: 50px;
+	width: 1.5em;
+	height: 1.5em;
 	border: solid white;
 	border-width: 0 3px 3px 0;
 	display: inline-block;
-	padding: 3px;
-	margin-top: 20%;
-	animation: arrowAnimation 5s linear infinite;
+	/*padding: 3px;*/
+	position: relative;
+	/*top: 5%;*/
+	/*left: 50%;*/
 }
 
 .down{
+	animation: arrowDownAnimation 5s linear infinite;
 	transform: rotate(45deg);
+}
+
+.up{
+	animation: arrowUpAnimation 5s linear infinite;
+	/*animation-direction: alternate; */
+	transform: rotate(225deg);
 }
 
 .body-content{
@@ -67,15 +93,22 @@ i {
 	width: 100%;
 	height: 100%;
 	overflow: auto;
+	scroll-behavior: smooth;
 	scroll-snap-points-y: repeat(100%);
 	scroll-snap-type: mandatory;
 	scroll-snap-destination: 100% 0%;
-	z-index: 10000;
 }
 
 div h3{
 	position: relative;
 	top: 10%;
+}
+
+.page-header{
+	position: relative;
+	top: 10%;
+	font-family: KrinkesRegular;
+	font-size: 10em;
 }
 
 .section{
@@ -97,7 +130,7 @@ div h3{
 #name-text h1{
 	font-family: KrinkesRegular;
 	margin-bottom: -0.5em;
-	font-size: 3em;	
+	font-size: 300%;	
 }
 #name-text h4{
 	margin-bottom: 2.5em;
@@ -106,23 +139,49 @@ div h3{
 #about-text, #education-text, #portfolio-text, #contact-text{
 	position: relative;
 	top: 10%;
-	font-size: 1.5em;
-	max-height: 25%;
-	max-width: 75%;
 }
 
-/*div img{
-	width: 100%;
-	max-height: 100%;
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: -1
-}*/
+#about-text, #education-text, #portfolio-text, #contact-text{
+
+}
+
+ul.nav li{
+	padding: 10px;
+}
+
+ul.nav li.active{
+	background: #000000;
+	opacity: 0.6;
+	border-radius: 10px 10px 0 0; 
+}
+
+.tabs-container{
+	position: relative;
+/*	margin-top: 1em;*/
+	opacity: 0.6;
+	text-align: left;
+	font-size: 1em;
+	font-family: sans-serif;
+	border-radius: 0  10px 10px 10px;
+}
+
+.about-item{
+	/*padding: 1em;*/
+	background: #000000;
+	margin-bottom: 1em;
+	margin-left: 4em;
+	opacity: 0.7;
+	padding-bottom: 0.5em;
+	box-shadow: -3px -3px 3px 3px black;
+}
+
+hr{
+	border-color: #fff;
+}
 
 img{
-	width: 50%;
-	height: 50%;
+	max-width: 100%;
+	max-height: 100%;
 }
 
 #education{
@@ -139,10 +198,47 @@ div .edu_item{
 	padding: 5px;
 }
 
-@keyframes arrowAnimation{
+@keyframes arrowDownAnimation{
 	0% { margin-top: 20%;
 		animation-timing-function: ease-in-out; }
 	50%{margin-top: 18%;
 		animation-timing-function: ease-in-out;}
 	100%{margin-top: 20%}
+}
+
+@keyframes arrowUpAnimation{
+	0% { margin-top: 18%;
+		animation-timing-function: ease-in-out; }
+	50%{margin-top: 20%;
+		animation-timing-function: ease-in-out;}
+	100%{margin-top: 18%}
+}
+
+@media(max-width: 480px) {
+	.body-content{
+		height: 100%;
+	}
+
+	.navbar-collapse{
+		background: #000000;
+		opacity: 0.9;
+	}
+
+	#name, #about, #education, #portfolio, #contact{
+	height: auto;
+	/*background: url("image/back.png") repeat;*/
+	overflow: visible;
+	position: relative;
+	top: 75px;
+	}
+
+
+	#name-text {
+		font-size: 1em;
+		
+	}
+
+	i {
+		display: none;
+	}
 }
