@@ -22,9 +22,9 @@ body{
 }
 
 nav{
-	position: fixed;
+/*	position: fixed;
 	top: 0px;
-	left: 0px;
+	left: 0px;*/
 /*	width: 1vw;*/
 	color: white;
 	z-index: 1;
@@ -224,8 +224,10 @@ div .edu_item{
 	}
 
 	.navbar-collapse{
-		background: #000000;
+		/*background: #000000;*/
 		opacity: 0.9;
+		width:100%;
+		text-align: center;
 	}
 
 	#name, #about, #education, #portfolio, #contact{
@@ -233,7 +235,7 @@ div .edu_item{
 	/*background: url("image/back.png") repeat;*/
 	overflow: visible;
 	position: relative;
-	top: 75px;
+	top: 200px;
 	}
 
 
