@@ -106,7 +106,7 @@ div h3{
 
 .page-header{
 	position: relative;
-	top: 10%;
+	top: 15%;
 	font-family: KrinkesRegular;
 	font-size: 10em;
 }
@@ -136,9 +136,9 @@ div h3{
 	margin-bottom: 2.5em;
 }
 
-#about-text, #education-text, #portfolio-text, #contact-text{
+#about-text, #education-text, #skills-text, #portfolio-text, #contact-text{
 	position: relative;
-	top: 10%;
+	top: 15%;
 }
 
 #about-text, #education-text, #portfolio-text, #contact-text{
