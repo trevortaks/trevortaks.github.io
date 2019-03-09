@@ -32,11 +32,11 @@
 		<div class="container" style="margin-left: 40%;">
 			<div class="collapse navbar-collapse" id="navbar-to-collapse"> 
 				<ul class="nav navbar-nav" id="navbar">
-					<li><a href="#name" class="current active">Home</a></li>
-					<li><a href="#about">About Me</a></li>
-					<li><a href="#education">Education</a></li>
-					<li><a href="#portfolio">Portfolio</a></li>
-					<li><a href="#contact">Contact Me</a></li>
+					<li><a href="#name" id="nav-home" class="current active">Home</a></li>
+					<li><a href="#about" id="nav-about" >About Me</a></li>
+					<li><a href="#education" id="nav-education" >Education</a></li>
+					<li><a href="#portfolio" id="nav-portfolio" >Portfolio</a></li>
+					<li><a href="#contact" id="nav-contact" >Contact Me</a></li>
 				</ul>
 			 </div>
 		 </div>
@@ -176,7 +176,7 @@
 					</div>
 				</div>
 			</div>
-			<div><a href="#portfolio"><i class="arrow down"></a></i></div>
+			<div style="position: relative; top: -13em;"><a href="#skills"><i class="arrow down"></a></i></div>
 		</div>
 		<!--Education Section-->
 		<!--Skills Section-->
@@ -258,6 +258,7 @@
 					</div>
 				</div>
 			</div>
+			<div><a href="#portfolio"><i class="arrow down"></i></a></div>
 		</div>
 		<!--Skills Section-->
 		<!--Gallery Section-->
@@ -277,7 +278,7 @@
 							<a href="images/7.png" class="thumbnail gallery-box" data-lightbox="example-set" data-title="">
 								<img src="images/7.png" alt="" class="img-responsive zoom-img">
 							</a>
-							
+
 						</div>
 						<div class="col-sm-6 col-md-3 gallery-grids">
 							<a href="images/8.png" class="thumbnail gallery-box" data-lightbox="example-set" data-title="">
@@ -321,6 +322,11 @@
 			$('#navbar li a.current').removeClass('current');
 			$(this).addClass('current');
 		});
+
+		/*$('div a i.arrow').on('click',function(){
+			$("#navbar li a.current").removeClass('current');
+			$('#navbar li a').addClass('current');
+		})*/
 	</script>
 
 	<script src="js/lightbox-plus-jquery.min.js"></script>
