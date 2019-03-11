@@ -29,7 +29,7 @@
 				<span class="navbar-toggler-icon" style="color: blue;"></span>
 			</button>
 		</div>
-		<div class="container" style="margin-left: 40%;">
+		<div class="container" style="margin-left: 40%; font-size: 0.85em;">
 			<div class="collapse navbar-collapse" id="navbar-to-collapse"> 
 				<ul class="nav navbar-nav" id="navbar">
 					<li><a href="#name" id="nav-home" class="current active">Home</a></li>
@@ -51,7 +51,7 @@
 
 	<div class="body-content">
 		<!--Name Section-->
-		<div class="section" id="name">
+		<div class="section container" id="name" data-section-name="name">
 			<div id="name-text">
 				<h1>Trevor Takawira</h1>
 				<h4>Developer / ICT Technician / Designer</h4>
@@ -62,7 +62,7 @@
 		</div>
 		<!--Name Section-->
 		<!--About Section-->
-		<div class="section container" id="about">
+		<div class="section container" id="about" data-section-name="about">
 			<!--<div><a href="#about"><i class="arrow up"></a></i></div> -->
 			<div class="page-header"><h3>About Me</h3></div>
 			<div id="about-text">
@@ -121,7 +121,7 @@
 		</div>
 		<!--About Section-->
 		<!--Education Section-->
-		<div class="section container" id="education">
+		<div class="section container" id="education" data-section-name="education">
 			<!-- <div><a href="#about"><i class="arrow up"></a></i></div> -->
 			<div class="page-header"><h3>Education</h3></div>
 			<div class="row" id="education-text">
@@ -180,7 +180,7 @@
 		</div>
 		<!--Education Section-->
 		<!--Skills Section-->
-		<div class="section container" id="skills">
+		<div class="section container" id="skills" data-section-name="skills">
 			<div class="page-header">
 				<h3>Skills</h3>
 			</div>
@@ -262,7 +262,7 @@
 		</div>
 		<!--Skills Section-->
 		<!--Gallery Section-->
-		<div class="section container" id="portfolio">
+		<div class="section container" id="portfolio" data-section-name="portfolio">
 			<!-- <div><a href="#about"><i class="arrow up"></a></i></div> -->
 			<div class="page-header"><h3>Gallery</h3></div>
 			<div class="row" id="portfolio-text"> 
@@ -270,23 +270,23 @@
 					
 					<div class="row gallery-info">
 						<div class="col-sm-6 col-md-3 gallery-grids">
-							<a href="images/6.png" class="thumbnail gallery-box" data-lightbox="example-set" data-title="">
+							<a href="images/6.png" class="thumbnail gallery-box" data-lightbox="example-set" data-title="Let's Sign : A Java Sign Language Translator">
 								<img src="images/6.png" alt="" class="img-responsive zoom-img">
 							</a>
 						</div>
 						<div class="col-sm-6 col-md-3 gallery-grids">
-							<a href="images/7.png" class="thumbnail gallery-box" data-lightbox="example-set" data-title="">
+							<a href="images/7.png" class="thumbnail gallery-box" data-lightbox="example-set" data-title="InstaWPF : A WPF instagram client in development">
 								<img src="images/7.png" alt="" class="img-responsive zoom-img">
 							</a>
 
 						</div>
 						<div class="col-sm-6 col-md-3 gallery-grids">
-							<a href="images/8.png" class="thumbnail gallery-box" data-lightbox="example-set" data-title="">
+							<a href="images/8.png" class="thumbnail gallery-box" data-lightbox="example-set" data-title="Earthquake Map : A WPF app showing recent earthquakes">
 								<img src="images/8.png" alt="" class="img-responsive zoom-img">
 							</a>
 						</div>
 						<div class="col-sm-6 col-md-3 gallery-grids">
-							<a href="images/9.png" class="thumbnail gallery-box" data-lightbox="example-set" data-title="">
+							<a href="images/9.png" class="thumbnail gallery-box" data-lightbox="example-set" data-title="Calculator : A small project to refresh my c#">
 								<img src="images/9.png" alt="" class="img-responsive zoom-img">
 							</a>
 						</div>
@@ -299,7 +299,7 @@
 		</div>
 		<!--Gallery Section-->
 		<!--Contacts Section-->
-		<div class="section" id="contact">
+		<div class="section container" id="contact" data-section-name="contact">
 			<!-- <div><a href="#about"><i class="arrow up"></a></i></div> -->
 			<div id="contact-text">
 				<div class="page-header"><h3>Contact Me</h3></div>
@@ -329,7 +329,21 @@
 		})*/
 	</script>
 
+	<!-- SnapScroll Core Files -->
+ 	<script type="text/JavaScript" src="js/jquery.scroll_to.js"></script>
+  	<script type="text/JavaScript" src="js/jquery.snapscroll.min.js"></script>
+  	<script type="text/javascript">
+  		$('.body-content').snapscroll();
+  	</script>
+
 	<script src="js/lightbox-plus-jquery.min.js"></script>
+	<script type="text/javascript">
+		lightbox.option({
+			'albumLabel': "Project %1 of %2",
+			'alwaysShowNavOnTouchDevices' : true
+
+		})
+	</script>
 
 </html>
  
